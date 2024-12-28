@@ -13,15 +13,19 @@ Given:
 
 $K = \frac{2 \cdot \pi}{360}$
 
+## Distance traveled by the wheels
+
 $d_1 = \alpha \cdot K \cdot (C + \frac{L}{2})$
 
 $d_2 = \alpha \cdot K \cdot (C - \frac{L}{2})$
 
-## Calculate the angle of the robot from first equation
+Two equations with two unknowns. $\alpha$ and $C$ can be calculated from the equations.
 
-$\underline{\underline{\alpha = \frac{d_1}{K \cdot (C + \frac{L}{2})}}}$
+## Angle of the robot
 
-## Use alpha to calculate center of rotation of the robot from second equation
+$\alpha = \frac{d_1}{K \cdot (C + \frac{L}{2})}$
+
+## Center of rotation of the robot
 
 $d_2 = \frac{d_1}{K \cdot (C + \frac{L}{2})} \cdot K \cdot (C - \frac{L}{2})$
 
@@ -33,9 +37,9 @@ $d_2 \cdot C + \frac{d_2 \cdot L}{2} = d_1 \cdot C - \frac{d_1 \cdot L}{2}$
 
 $C*(d_1 - d_2) = \frac{L}{2} * (d_1 + d_2)$
 
-$\underline{\underline{C = \frac{L}{2} * \frac{d_1 + d_2}{d_1 - d_2}}}$
+$C = \frac{L}{2} * \frac{d_1 + d_2}{d_1 - d_2}$
 
-## Calculate the angle of the robot from first equation
+## Angle of the robot with respect to the center of rotation
 
 $\alpha = \frac{d_1}{K \cdot (C + \frac{L}{2})}$
 
@@ -51,4 +55,10 @@ $\alpha = \frac{d_1}{K \cdot L * \frac{d_1}{d_1 - d_2}}$
 
 $\alpha = \frac{d_1}{K \cdot L} \cdot \frac{d_1 - d_2}{d_1}$
 
-$\underline{\underline{\alpha = \frac{d_1 - d_2}{K \cdot L}}}$
+$\alpha = \frac{d_1 - d_2}{K \cdot L}$
+
+## X and Y coordinates of the robot
+
+$x = C \cdot \cos(\alpha)$
+
+$y = C \cdot \sin(\alpha)$
