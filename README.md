@@ -4,8 +4,8 @@
 
 Given:
 
-- $d_1$ is the distance traveled by the left wheel
-- $d_2$ is the distance traveled by the right wheel
+- $d_1$ is the distance traveled by the right wheel
+- $d_2$ is the distance traveled by the left wheel
 - $K$ is a constant
 - $L$ is the distance between wheels
 - $C$ is the distance from the center of rotation to the center of the robot
